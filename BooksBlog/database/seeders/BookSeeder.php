@@ -15,9 +15,9 @@ class BookSeeder extends Seeder
 
     {
         Book::create([
-            "title"=> "mostafa",
-            "auther"=> "mostafa mahmoud",
-            "description"=> "mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud",
+            "title"=> "الروح والجسد",
+            "auther"=> "مصطفى محمود",
+            "description"=> "الروح والجسد.. طرفان نقيضان يتصارعان وبينهما يعيش الإنسان في كبد تحلق به الروح في علياء المعاني السامية ويقيده الجسد الفاني باغلال محكمة من شهوات ورغبات.. هذا الصراع الذي تكلم فيه رجال الدين والفلاسفة والمفكرون والمتصوفون.. وحسمه لصالح الروح االأنبياء ومن خطا على نهجهم، ولكن ما ذا نعرف عن هذا الصراع ودواخله؟.. قد يكون الكثير و قد يكون أقل القليل، ولكننا حينما نقرأ ما كتب ا الروح والجسد..",
             "publish_year"=> "2005",
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/1.webp",
@@ -25,9 +25,9 @@ class BookSeeder extends Seeder
 
         ]);
         Book::create([
-            "title"=> "mostafa",
-            "auther"=> "mostafa mahmoud",
-            "description"=> "mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud",
+            "title"=> "الروح والجسد",
+            "auther"=> "مصطفى محمود",
+            "description"=> "الروح والجسد.. طرفان نقيضان يتصارعان وبينهما يعيش الإنسان في كبد تحلق به الروح في علياء المعاني السامية ويقيده الجسد الفاني باغلال محكمة من شهوات ورغبات.. هذا الصراع الذي تكلم فيه رجال الدين والفلاسفة والمفكرون والمتصوفون.. وحسمه لصالح الروح االأنبياء ومن خطا على نهجهم، ولكن ما ذا نعرف عن هذا الصراع ودواخله؟.. قد يكون الكثير و قد يكون أقل القليل، ولكننا حينما نقرأ ما كتب ا الروح والجسد..",
             "publish_year"=> "2005",
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/2.webp",
@@ -35,9 +35,9 @@ class BookSeeder extends Seeder
 
         ]);
         Book::create([
-            "title"=> "mostafa",
-            "auther"=> "mostafa mahmoud",
-            "description"=> "mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud",
+            "title"=> "الروح والجسد",
+            "auther"=> "مصطفى محمود",
+            "description"=> "الروح والجسد.. طرفان نقيضان يتصارعان وبينهما يعيش الإنسان في كبد تحلق به الروح في علياء المعاني السامية ويقيده الجسد الفاني باغلال محكمة من شهوات ورغبات.. هذا الصراع الذي تكلم فيه رجال الدين والفلاسفة والمفكرون والمتصوفون.. وحسمه لصالح الروح االأنبياء ومن خطا على نهجهم، ولكن ما ذا نعرف عن هذا الصراع ودواخله؟.. قد يكون الكثير و قد يكون أقل القليل، ولكننا حينما نقرأ ما كتب ا الروح والجسد..",
             "publish_year"=> "2005",
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/3.webp",
@@ -45,9 +45,9 @@ class BookSeeder extends Seeder
 
         ]);
         Book::create([
-            "title"=> "mostafa",
-            "auther"=> "mostafa mahmoud",
-            "description"=> "mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud mostafa mahmoud",
+            "title"=> "الروح والجسد",
+            "auther"=> "مصطفى محمود",
+            "description"=> "الروح والجسد.. طرفان نقيضان يتصارعان وبينهما يعيش الإنسان في كبد تحلق به الروح في علياء المعاني السامية ويقيده الجسد الفاني باغلال محكمة من شهوات ورغبات.. هذا الصراع الذي تكلم فيه رجال الدين والفلاسفة والمفكرون والمتصوفون.. وحسمه لصالح الروح االأنبياء ومن خطا على نهجهم، ولكن ما ذا نعرف عن هذا الصراع ودواخله؟.. قد يكون الكثير و قد يكون أقل القليل، ولكننا حينما نقرأ ما كتب ا الروح والجسد..",
             "publish_year"=> "2005",
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/4.webp",
@@ -55,8 +55,8 @@ class BookSeeder extends Seeder
 
         ]);
         Book::create([
-            "title"=> "mostafa",
-            "auther"=> "mostafa mahmoud",
+            "title"=> "القرآن كائن حى الكاتب د.مصطفى محمود",
+            "auther"=> "مصطفى",
             "description"=> "يقومُ الكتاب على قسمين كبيرين . الأول يتناول الأدب - شعرًا ونثرًا - من قيام الدولة العباسية سنة اثنتين وثلاثين ومائة للهجرة ، إلى سنة أربع وثلاثين وثلاث مائة للهجرة . والقسم الثاني ينتهي بانتهاء الدولة العباسية سنة ستّ وخمسين وستّ مائة للهجرة . ",
             "publish_year"=> "2005",
             "downloads"=> "5",
@@ -75,7 +75,7 @@ class BookSeeder extends Seeder
 
         ]);
         Book::create([
-            "title"=> "الأدب العربي في العصر العباسي",
+            "title"=> "القرأن الكريم",
             "auther"=> "الدكتور ناظم رشيد",
             "description"=> "يقومُ الكتاب على قسمين كبيرين . الأول يتناول الأدب - شعرًا ونثرًا - من قيام الدولة العباسية سنة اثنتين وثلاثين ومائة للهجرة ، إلى سنة أربع وثلاثين وثلاث مائة للهجرة . والقسم الثاني ينتهي بانتهاء الدولة العباسية سنة ستّ وخمسين وستّ مائة للهجرة . ",
             "publish_year"=> "2020",
@@ -174,7 +174,6 @@ class BookSeeder extends Seeder
             "file_path"=> "books_file/6.webp",
 
         ]);
-
         //
     }
 }
