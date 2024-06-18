@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
 use App\Models\User as ModelsUser;
 use App\Models\User;
 use Illuminate\Contracts\Session\Session as SessionSession;
@@ -70,9 +71,10 @@ class UserController extends Controller
     }
     public function dashboard()
     {
-
-      if(Auth::check()){
-        return view('auth.dashboard');
+        $books = Book::all();
+        $count = Book::count();
+        if(Auth::check()){
+        return view('auth.dashboard', compact('books','count'));
       }
 
       return redirect('login');

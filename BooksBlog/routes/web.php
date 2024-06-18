@@ -10,8 +10,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('upload_book', [BookController::class,'create'])->name('upload_book');
-
 Route::post('store', [BookController::class,'store'])->name('store_book');
+Route::get('book/destroy/{id}', [BookController::class,'destroy'])->name('book.destroy');
+
 
 Route::get('books', [BookController::class,'index'])->name('books');
 Route::get('/', [BookController::class,'home']);

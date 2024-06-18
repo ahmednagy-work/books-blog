@@ -30,6 +30,7 @@ class BookController extends Controller
     public function home()
     {
         $books = Book::all();
+        //$file = Book::count();
         //$files = File::all();
         // $data = [
         //     $books,
@@ -124,8 +125,13 @@ class BookController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Book $book)
+    public function destroy($id)
     {
+        //return $id;
+        Book::destroy($id);
+        //$book = Book::find($id);
+        //$book->delete();
+        return redirect("dashboard")->with("success","done");
         //
     }
 }
