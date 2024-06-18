@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,7 @@ Route::post('register-post',[UserController::class,'postRegistration'])->name('r
 
 Route::get('dashboard',[UserController::class,'dashboard'])->name('dashboard');
 Route::get('logout',[UserController::class,'logout'])->name('logout');
+
+
+Route::get('send_message',[MessageController::class,'create'])->name('send_message');
+Route::post('contact',[MessageController::class,'store'])->name('contact');

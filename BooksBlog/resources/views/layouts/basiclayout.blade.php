@@ -29,7 +29,7 @@
                 <a class="font-bold text-white dark:text-black dark:hover:text-neutral-400"  href="{{ route('login-form') }}" aria-current="page">Login</a>
 
                 <a class="font-bold text-gray-400 hover:text-gray-500 dark:text-neutral-950 dark:hover:text-neutral-400" href="{{ route('upload_book') }}">Upload A Book</a>
-                <a class="font-bold text-gray-400 hover:text-gray-500 dark:text-neutral-950 dark:hover:text-neutral-400" href="#">Contact</a>
+                <a class="font-bold text-gray-400 hover:text-gray-500 dark:text-neutral-950 dark:hover:text-neutral-400" href="{{ route('send_message') }}">Contact</a>
                 @if (Auth::check())
                 <div class="card-body">
                     <a class="font-bold text-gray-400 hover:text-gray-500 dark:text-neutral-950 dark:hover:text-neutral-400" href="#">Welcome {{ ucfirst(Auth()->user()->name) }}</a>

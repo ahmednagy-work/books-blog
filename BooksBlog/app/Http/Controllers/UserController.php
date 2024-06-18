@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\User as ModelsUser;
-
 use App\Models\User;
 use Illuminate\Contracts\Session\Session as SessionSession;
 use Illuminate\Support\Facades\Auth;
@@ -16,6 +15,9 @@ use Illuminate\Support\Facades\Session as FacadesSession;
 
 class UserController extends Controller
 {
+    public function __construct(){
+        //$this->middleware("auth");
+    }
     public function LoginForm()
     {
         return view('auth.login');
@@ -32,6 +34,10 @@ class UserController extends Controller
         'email' => 'required',
         'password' => 'required',
         ]);
+        //        if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+        if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
+            return redirect()->intended('dashboard');
+        }
 
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
