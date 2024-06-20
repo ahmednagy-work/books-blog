@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Book;
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,7 @@ class BookSeeder extends Seeder
     public function run(): void
 
     {
+        $user_id = User::inRandomOrder()->first()->id;
         Book::create([
             "title"=> "الروح والجسد",
             "auther"=> "مصطفى محمود",
@@ -22,6 +24,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/1.webp",
             "file_path"=> "books_file/1.webp",
+            "user_id" => $user_id,
 
         ]);
         Book::create([
@@ -32,6 +35,8 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/2.webp",
             "file_path"=> "books_file/2.webp",
+            "user_id" => $user_id,
+
 
         ]);
         Book::create([
@@ -42,6 +47,8 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/3.webp",
             "file_path"=> "books_file/3.webp",
+            "user_id" => $user_id,
+
 
         ]);
         Book::create([
@@ -52,6 +59,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/4.webp",
             "file_path"=> "books_file/4.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -62,6 +70,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/5.webp",
             "file_path"=> "books_file/5.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -72,6 +81,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/6.webp",
             "file_path"=> "books_file/6.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -82,6 +92,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/3.webp",
             "file_path"=> "books_file/3.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -92,6 +103,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/5.webp",
             "file_path"=> "books_file/5.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -102,6 +114,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/1.webp",
             "file_path"=> "books_file/1.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -112,6 +125,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/6.webp",
             "file_path"=> "books_file/6.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -122,6 +136,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/5.webp",
             "file_path"=> "books_file/5.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -132,6 +147,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/4.webp",
             "file_path"=> "books_file/4.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -142,6 +158,18 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/3.webp",
             "file_path"=> "books_file/3.webp",
+            "user_id"=> $user_id,
+
+        ]);
+        Book::create([
+            "title"=> "الأدب العربي في العصر العباسي",
+            "auther"=> "الدكتور ناظم رشيد",
+            "description"=> "يقومُ الكتاب على قسمين كبيرين . الأول يتناول الأدب - شعرًا ونثرًا - من قيام الدولة العباسية سنة اثنتين وثلاثين ومائة للهجرة ، إلى سنة أربع وثلاثين وثلاث مائة للهجرة . والقسم الثاني ينتهي بانتهاء الدولة العباسية سنة ستّ وخمسين وستّ مائة للهجرة . ",
+            "publish_year"=> "2020",
+            "downloads"=> "5",
+            "avatar_path"=> "books_avatar/5.webp",
+            "file_path"=> "books_file/5.webp", 
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -152,16 +180,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/5.webp",
             "file_path"=> "books_file/5.webp",
-
-        ]);
-        Book::create([
-            "title"=> "الأدب العربي في العصر العباسي",
-            "auther"=> "الدكتور ناظم رشيد",
-            "description"=> "يقومُ الكتاب على قسمين كبيرين . الأول يتناول الأدب - شعرًا ونثرًا - من قيام الدولة العباسية سنة اثنتين وثلاثين ومائة للهجرة ، إلى سنة أربع وثلاثين وثلاث مائة للهجرة . والقسم الثاني ينتهي بانتهاء الدولة العباسية سنة ستّ وخمسين وستّ مائة للهجرة . ",
-            "publish_year"=> "2020",
-            "downloads"=> "5",
-            "avatar_path"=> "books_avatar/5.webp",
-            "file_path"=> "books_file/5.webp",
+            "user_id"=> $user_id,
 
         ]);
         Book::create([
@@ -172,6 +191,7 @@ class BookSeeder extends Seeder
             "downloads"=> "5",
             "avatar_path"=> "books_avatar/6.webp",
             "file_path"=> "books_file/6.webp",
+            "user_id"=> $user_id,
 
         ]);
         //

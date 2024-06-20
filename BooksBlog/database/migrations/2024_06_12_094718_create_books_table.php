@@ -16,6 +16,7 @@ return new class extends Migration
             //$table->foreign('id')->references('id')->on('files')->onDelete('cascade');
             $table->string('title');
             $table->string('auther');
+            $table->foreignId('user_id')->constrained()->onDelete('CASCADE');
             $table->string('description');
             $table->string('publish_year');
             $table->string('downloads')->nullable();

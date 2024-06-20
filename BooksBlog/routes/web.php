@@ -15,7 +15,7 @@ Route::get('book/destroy/{id}', [BookController::class,'destroy'])->name('book.d
 
 
 Route::get('books', [BookController::class,'index'])->name('books');
-Route::get('/', [BookController::class,'home']);
+Route::get('/', [BookController::class,'home'])->name('home');
 Route::get('books/book-profile/{id}', [BookController::class,'book_profile'])->name('book-card');
 
 Route::get('login',[UserController::class,'LoginForm'])->name('login-form');

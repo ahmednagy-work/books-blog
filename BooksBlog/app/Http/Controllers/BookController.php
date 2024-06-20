@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\File;
@@ -18,31 +19,32 @@ class BookController extends Controller
     {
 
 
-        $books = Book::all();
+        //$books = Book::all();
+        $user_id = Auth::user()->id;
+        $books = User::find($user_id)->books;
+        if($books){
+            return view("books.index", compact('books')); 
+        }else{
+            return redirect('login');
+        }
         //$files = File::all();
         // $data = [
         //     $books,
         //     $files
 
         // ];
-        return view("books.index", compact('books'));
+        //return view("books.index", compact('books'));
     }
     public function home()
     {
         $books = Book::all();
-        //$file = Book::count();
-        //$files = File::all();
-        // $data = [
-        //     $books,
-        //     $files
-
-        // ];
         return view("welcome", compact('books'));
     }
     public function book_profile($id){
+        //$user_name = Auth::user()->name;
         $book = Book::find($id);
 
-        return view("books.book_profile", compact('book'));
+        return view("books.book_profile", compact('book','user_name'));
 
     }
 
@@ -64,6 +66,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
+        $userId = Auth::user()->id;
         request()->validate([
             'title' => 'required',
             'auther' => 'required',
@@ -84,6 +87,7 @@ class BookController extends Controller
             "downloads"=> $request->input("downloads"),
             "avatar_path"=> $avatar_path,
             "file_path"=> $book_path,
+            "user_id" => $userId,
 
         ]);
         //$avatar_path = $this->StoreAvatar($request,"book_avatar");
