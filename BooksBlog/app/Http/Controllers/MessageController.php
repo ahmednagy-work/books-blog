@@ -40,7 +40,7 @@ class MessageController extends Controller
             'subject'=> $request->input('subject'),
             'message'=> $request->input('message'),
         ]);
-        return redirect("books")->with("success","done");
+        return redirect("/")->with("success","done");
         //
     }
 
